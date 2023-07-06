@@ -8,9 +8,8 @@ import './page.css'
 export default function LandingPage() {
     console.log("landing page");
     return (
-        <header style={ HeaderStyle }>
-            <br />
-            <div className="text-center">
+        <header style={ HeaderStyle } className='login'>
+            <div className="headerimg text-center">
                 <img src={homeLogo} alt=""/>
             </div>
             <h1 className="main-title text-center">Welcome to HAL Smart Township</h1>

@@ -47,7 +47,7 @@ function LogedIn(){
       <div className="app__body">
         <Router basename={process.env.PUBLIC_URL}>
           <Switch>
-            <Route path="/" exact>
+            <Route path="/admin" exact>
               <Sidebar hide={false} />
               <Chat hide={true} removeRoom={removeRoom} />
               <div className="project__info">

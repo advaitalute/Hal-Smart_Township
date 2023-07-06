@@ -15,7 +15,7 @@ import { Button } from "@material-ui/core";
 
 import "./App.css";
 import './Components/pages/page.css';
-import LogedIn from "./Components/LogedIn";
+// import LogedIn from "./Components/LogedIn";
 
 export default function UserPage() {
     
@@ -94,7 +94,28 @@ export default function UserPage() {
                     </div>
                 </div>
                 ) : (        
-                <LogedIn />
+                <div className="app__body">
+                    <Router basename={process.env.PUBLIC_URL}>
+                        <Switch>
+                            <Route path="/user" exact>
+                                <Sidebar hide={false} />
+                                <Chat hide={true} removeRoom={removeRoom} />
+                                <div className="project__info">
+                                    <img src="https://stories.jobaaj.com/files/manage/thumb/641bf7335dd8e.jpg" alt=""/>
+                                    <div className="text">
+                                    <h1>Resolver</h1>
+                                    </div>
+                                </div>
+                            </Route>
+                            <Route path="/rooms/:roomId/:receiver">
+                                <Sidebar hide={true} />
+                                <Chat hide={false} removeRoom={removeRoom} />
+                            </Route>
+                        </Switch>
+                    </Router>
+
+                    
+                </div>
             )}
         </div>
     )

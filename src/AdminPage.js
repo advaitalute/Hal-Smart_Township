@@ -6,7 +6,7 @@ import './Components/pages/page.css';
 
 export default function SignInPage() {
     return (
-        <div className="main text-center m-5-auto">
+        <div className="main text-center m-5-auto login">
             <h2 className="text-center">Sign in as Admin</h2>
             <form action="/home">
                 <p>
@@ -23,7 +23,7 @@ export default function SignInPage() {
                     <button id="sub_btn" type="submit">Login</button>
                 </p>
             </form>
-            <footer>
+            <footer className='login'>
                 <p>First time? <Link to="/register">Create an account</Link>.</p>
                 <p><Link to="/">Back to Homepage</Link>.</p>
             </footer>

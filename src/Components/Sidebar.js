@@ -117,7 +117,7 @@ function Sidebar({ hide }) {
         </div>
       </div>
       <div className="navbar">
-        <Link to={"/"}>
+        <Link to={"/user"}>
           <div className="navbar__contacts">
             <i className="fa fa-user"></i>
             <span>Chats</span>
