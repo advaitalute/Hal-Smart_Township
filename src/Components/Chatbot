@@ -56,7 +56,7 @@
 	<div class="phone">
 		<div class="chat" bind:this={div}>
 			<header>
-				<h1>Eliza</h1>
+				<h1>HAL-TOWNSHIP BOT</h1>
 
 				<article class="eliza">
 					<span>{eliza.getInitial()}</span>
